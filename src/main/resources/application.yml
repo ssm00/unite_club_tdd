@@ -1,0 +1,19 @@
+spring:
+  application:
+  name: unite_club_tdd
+
+  datasource:
+    url: jdbc:h2:mem:test
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+
+jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+        show_sql: true
