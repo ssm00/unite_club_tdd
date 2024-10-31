@@ -1,12 +1,12 @@
-package com.example.unite_club_tdd.service;
+package com.example.unite_club_tdd.user.application;
 
-import com.example.unite_club_tdd.domain.Role;
-import com.example.unite_club_tdd.domain.UserEntity;
-import com.example.unite_club_tdd.dto.BaseResponseStatus;
-import com.example.unite_club_tdd.dto.LoginDto;
-import com.example.unite_club_tdd.dto.SignUpDto;
+import com.example.unite_club_tdd.user.repository.entity.Role;
+import com.example.unite_club_tdd.user.repository.entity.UserEntity;
+import com.example.unite_club_tdd.user.dto.BaseResponseStatus;
+import com.example.unite_club_tdd.user.dto.LoginDto;
+import com.example.unite_club_tdd.user.dto.SignUpDto;
 import com.example.unite_club_tdd.exception.BaseException;
-import com.example.unite_club_tdd.repository.UserRepository;
+import com.example.unite_club_tdd.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

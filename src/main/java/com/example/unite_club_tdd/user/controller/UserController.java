@@ -1,12 +1,12 @@
-package com.example.unite_club_tdd.controller;
+package com.example.unite_club_tdd.user.controller;
 
 
-import com.example.unite_club_tdd.dto.BaseResponseStatus;
-import com.example.unite_club_tdd.dto.LoginDto;
-import com.example.unite_club_tdd.dto.ResponseDTO;
-import com.example.unite_club_tdd.dto.SignUpDto;
+import com.example.unite_club_tdd.user.dto.BaseResponseStatus;
+import com.example.unite_club_tdd.user.dto.LoginDto;
+import com.example.unite_club_tdd.user.dto.ResponseDTO;
+import com.example.unite_club_tdd.user.dto.SignUpDto;
 import com.example.unite_club_tdd.exception.BaseException;
-import com.example.unite_club_tdd.service.UserService;
+import com.example.unite_club_tdd.user.application.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

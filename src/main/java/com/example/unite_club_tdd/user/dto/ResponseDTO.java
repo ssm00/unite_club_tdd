@@ -1,11 +1,10 @@
-package com.example.unite_club_tdd.dto;
+package com.example.unite_club_tdd.user.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
-import static com.example.unite_club_tdd.dto.BaseResponseStatus.SUCCESS;
 @Getter
 @AllArgsConstructor
 public class ResponseDTO<T> {

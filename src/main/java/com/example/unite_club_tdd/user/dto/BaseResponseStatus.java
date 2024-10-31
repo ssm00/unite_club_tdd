@@ -1,4 +1,4 @@
-package com.example.unite_club_tdd.dto;
+package com.example.unite_club_tdd.user.dto;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

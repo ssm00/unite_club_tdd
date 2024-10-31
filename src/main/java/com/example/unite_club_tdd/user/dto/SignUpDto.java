@@ -1,7 +1,7 @@
-package com.example.unite_club_tdd.dto;
+package com.example.unite_club_tdd.user.dto;
 
-import com.example.unite_club_tdd.domain.Role;
-import com.example.unite_club_tdd.domain.UserEntity;
+import com.example.unite_club_tdd.user.repository.entity.Role;
+import com.example.unite_club_tdd.user.repository.entity.UserEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -26,7 +26,7 @@ public class SignUpDto {
         private Role role;
 
         public static Res mapEntityToDTO(UserEntity entity) {
-            return Res.builder()
+                return Res.builder()
                     .userId(entity.getUserId())
                     .name(entity.getName())
                     .role(entity.getRole())
