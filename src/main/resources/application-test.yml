@@ -11,7 +11,11 @@ spring:
     redis:
       host: localhost  # Redis 서버 호스트
       port: 6379      # Redis 포트
-      password:       # 비밀번호 (설정된 경우)
+      password: 1q2w3e4r@
+
+redisson:
+  singleServerConfig:
+    address: redis://localhost:6379
 
 jpa:
     database-platform: org.hibernate.dialect.H2Dialect

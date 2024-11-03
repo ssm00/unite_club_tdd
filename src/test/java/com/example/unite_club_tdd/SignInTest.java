@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.mockito.Mockito;
 
 @SpringBootTest
-@TestPropertySource(locations = "classpath:application-test.yml")
+@TestPropertySource(properties = {"spring.config.location = classpath:application-test.yml"})
 public class SignInTest {
 
     @Autowired

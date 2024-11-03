@@ -7,9 +7,7 @@ import com.example.unite_club_tdd.apply.dto.CourseListResponseDto;
 import com.example.unite_club_tdd.apply.dto.MySucceedApplyResponseDto;
 import com.example.unite_club_tdd.apply.repository.ApplyRepository;
 import com.example.unite_club_tdd.apply.repository.CourseRepository;
-import com.example.unite_club_tdd.apply.repository.entity.Apply;
 import com.example.unite_club_tdd.apply.repository.entity.Course;
-import com.example.unite_club_tdd.user.dto.BaseResponseStatus;
 import com.example.unite_club_tdd.user.repository.UserRepository;
 import com.example.unite_club_tdd.user.repository.entity.Role;
 import com.example.unite_club_tdd.user.repository.entity.UserEntity;
@@ -18,18 +16,19 @@ import jakarta.persistence.PersistenceContext;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.time.DayOfWeek;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 @SpringBootTest
 @Transactional
+@ActiveProfiles("test")
 public class ApplyTest {
 
 
